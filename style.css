@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+
+
+
+--Transparentwhite : hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+--Verylightgray : hsl(0, 0%, 95%);/*  (background, headings, buttons) */
+}
+
+
+* {
+  font-size: 15px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  min-height: 100vh;
+  background: var(--Verylightgray);
+}
+
+.container {
+	   display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     width:1000px;
+     margin: auto ;
+     min-height: 100vh;
+     
+	}	
+
+	.column {
+	  flex: 33.33%;
+	  height: 500px;
+    width: 300px;
+	 
+	
+	  padding: 48px;
+	  text-align: left;
+    display: flex;
+    flex-direction: column;
+   
+   
+    
+	}
+	
+
+  .column-1 {
+    background: var(--Brightorange);
+    border-radius: 15px 0 0 15px;
+  }
+  .column-2 {
+    background: var(--Darkcyan);
+  }
+  .column-3 {
+    background: var(--Verydarkcyan);
+    border-radius: 0 15px 15px 0;
+  }
+
+
+  h2 {
+    color: var(--Verylightgray);
+    font-size: 30px;
+    font-weight: 700;
+    font-family:  'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+
+  p {
+    color: var(--Transparentwhite);
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: 23px;
+    margin-top: 41px;
+    line-height: 25px;
+  }
+
+  .btn {
+    color: var(--Transparentwhite);
+    margin-top: 84px;
+    padding: 10px 5px;
+    width: 140px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .btn-1 {
+    color: var(--Brightorange);
+   
+  }
+  .btn-2 {
+    color: var(--Darkcyan);
+  }
+
+  .btn-3 {
+    color: var(--Verydarkcyan);
+  }
+
+  .btn-1:hover {
+    color: var(--Transparentwhite);
+    background: var(--Brightorange);
+    border: 2px solid var(--Transparentwhite);
+  }
+  .btn-2:hover {
+    color: var(--Transparentwhite);
+    background: var(--Darkcyan);
+     border: 2px solid var(--Transparentwhite);
+  }
+  .btn-3:hover {
+    color: var(--Transparentwhite);
+    background: var(--Verydarkcyan);
+     border: 2px solid var(--Transparentwhite);
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    body, html { overflow-x:hidden; }
+
+      body {
+      min-width: 100%;
+      padding: 10px;
+      margin: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   
+  }
+  .container {
+	   display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    
+     
+	}
+
+  
+  .column-1 {
+    background: var(--Brightorange);
+    border-radius: 15px 15px 0 0;
+  }
+  .column-2 {
+    background: var(--Darkcyan);
+  }
+  .column-3 {
+    background: var(--Verydarkcyan);
+    border-radius: 0 0 15px 15px;
+  }
+
+}
